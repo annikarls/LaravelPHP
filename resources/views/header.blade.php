@@ -9,11 +9,13 @@
 </head>
 <body>
     <h1 class="title">Header</h1>
-    <ul class="content">
-        <li><a href="/">Hem</a></li>
-        <li><a href="/beer">Öl</a></li>
-        <li><a href="/event">Event</a></li>
-        <li><a href="/contact">Kontakt</a></li>
-        <li><a href="/login">(Logga in)</a></li>
-    </ul>
+    <div class="content">
+        <ul>
+            <li><a href="/">Hem</a></li>
+            <li><a href="/beer">Öl</a></li>
+            <li><a href="/event">Event</a></li>
+            <li><a href="/contact">Kontakt</a></li>
+            <li><a href="/login">(Logga in)</a></li>
+        </ul>
+    </div>
     @yield('content')
