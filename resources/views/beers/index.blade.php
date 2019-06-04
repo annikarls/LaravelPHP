@@ -7,6 +7,7 @@
             <li>{{ $beer->beerName }}</li>
         @endforeach
     </ul>
+    <p><a href="/beers/create">Lägg till ny öl</a></p>
 @endsection
 </body>
 </html>

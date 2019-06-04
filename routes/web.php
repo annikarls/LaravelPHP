@@ -14,7 +14,7 @@
 Route::get('/', 'PagesController@home');
 Route::get('/login', 'PagesController@login');
 Route::get('/event', 'PagesController@event');
-Route::get('/beer', 'PagesController@beer');
+Route::get('/beers', 'PagesController@index');
 Route::get('/contact', 'PagesController@contact');
 
 Route::resource('beers', 'BeersController');
