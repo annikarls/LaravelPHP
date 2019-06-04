@@ -5,6 +5,10 @@
 /vendor
 /database
 /app/Providers
+/app/User.php
+/app/Beer.php
+/app/Event.php
+/app/Rate.php
 .env
 .phpunit.result.cache
 Homestead.json
