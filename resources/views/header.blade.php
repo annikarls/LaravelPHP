@@ -12,7 +12,7 @@
     <div class="content">
         <ul>
             <li><a href="/">Hem</a></li>
-            <li><a href="/beer">Öl</a></li>
+            <li><a href="/beers">Öl</a></li>
             <li><a href="/event">Event</a></li>
             <li><a href="/contact">Kontakt</a></li>
             <li><a href="/login">(Logga in)</a></li>
