@@ -1,14 +1,31 @@
 @extends('header')
 @section('title', 'Öl')
 @section('content')
-    <h1 class="title">ÖL</h1>
-    <ul class="content">
+    <div class="columns">
+        
         @foreach ($beers as $beer)
-            <li>{{ $beer->beerName }}</li>
-            <img src="{{ $beer->beerImage }}" style="max-width:20%">
+        <div class="column">
+            <div class="field">
+                <div class="control">
+                    <p class="is-size-3">{{ $beer->beerName }}</p>
+                    <a class="button is-success is-outlined" href="/beers/{{ $beer->beerId }}/edit">Redigera</a>
+                </div>
+            </div>
+            <form action="/beers/{{ $beer->beerId }}" method="POST">
+                @method('DELETE')
+                @csrf
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-danger" type="submit">Ta bort</button>
+                    </div>
+                </div>
+            </form>
+            <img src="{{ $beer->beerImage }}" {{--style="max-width:50%"--}}>
+        </div>
         @endforeach
-    </ul>
-    <p><a href="/beers/create">Lägg till ny öl</a></p>
+        
+    </div>
+    <a class="button" href="/beers/create">Lägg till ny öl</a>
 @endsection
 </body>
 </html>

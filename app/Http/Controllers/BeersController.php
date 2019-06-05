@@ -33,13 +33,11 @@ class BeersController extends Controller
         return redirect('/beers');
     }
 
-    public function edit($id) {
-        $beer = Beer::find($id);
+    public function edit(Beer $beer) {
         return view('beers.edit', compact('beer'));
     }
 
-    public function update($id) {
-        $beer = Beer::find($id);
+    public function update(Beer $beer) {
         $beer->beerName = request('name');
         $beer->beerImage = request('image');
         //$beer->beerRate = request('rate');
@@ -50,6 +48,12 @@ class BeersController extends Controller
         $beer->beerBrewery = request('brewery');
         $beer->beerUserId = request('userid');
         $beer->save();
+
+        return redirect('/beers');
+    }
+
+    public function destroy(Beer $beer) {
+        $beer->delete();
 
         return redirect('/beers');
     }
