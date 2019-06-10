@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@home');
 Route::get('/login', 'PagesController@login');
-Route::get('/event', 'PagesController@event');
+Route::get('/events', 'PagesController@index');
 Route::get('/beers', 'PagesController@index');
 Route::get('/contact', 'PagesController@contact');
 

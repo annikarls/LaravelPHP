@@ -6,9 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-  protected $guarded = [];
+    protected $guarded = [];
 
-  public function beers() {
-    return $this->hasMany(Beer::class);
-  }
+    public function beers()
+    {
+      return $this->hasMany(Beer::class);
+    }
+
 }
