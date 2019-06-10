@@ -19,3 +19,7 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::resource('beers', 'BeersController');
 Route::resource('events', 'EventsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
