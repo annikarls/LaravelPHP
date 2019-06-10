@@ -5,9 +5,9 @@
     <ul>
         @foreach ($events as $event)
             <p>{{ $event->eventTitle }}</p>
-            <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>
+            <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>    
+    </ul>
       
-    </ul>  
     <form action="/events/{{ $event->eventId }}" method="POST">
         @method('DELETE')
         @csrf
@@ -16,7 +16,11 @@
                 <button class="button is-danger" type="submit">Ta bort</button>
             </div>
         </div>
-    </form>
+    </form>  
+        <div class="img__wrap">
+          <img class="img__img" src="{{ $event->eventImage }}">          
+        </div>
+
     @endforeach
     
     <a class="button" href="/events/create">Lägg till nytt event</a>
