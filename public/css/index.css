@@ -43,6 +43,16 @@ form .input {
     background-color: #F8D205;
 }
 
+/*Yasmine registrera */
+.regForm {
+    background-color: #F8D205;
+    padding: 8%;
+}
+
+.regform .input {
+    width: 50%;
+}
+
 /* Annika
     öl-sidan */
 .beerColumn {
