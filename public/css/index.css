@@ -1,23 +1,36 @@
-/* 0 padding på kolumner */
+/* övrigt */
 .column {
     padding: 0;
+}
+
+.title {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 /*Yasmine header*/
 .menu {
     background-color: #0d4e4a;
     height: 100vh;
-    padding-top: 10%;
+    padding: 10%;
 }
 
 .menu-list a {
     color: white;
 }
 
+.menu-list {
+    padding-top: 70%;
+}
+
 /*Yasmine Logga in */
 .loginForm {
     background-color: #0d4e4a;
     padding: 8%;
+}
+
+.loginForm .title {
+    color: white;
 }
 
 form .input {
