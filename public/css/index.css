@@ -1,50 +1,58 @@
+/*Yasmine header*/
+.menu {
+    background-color: lightgrey;
+    position: fixed;
+    height: 100vh;
+    padding-top: 10%;
+}
+
 /* Annika
     öl-sidan */
 .column {
     max-width: 30%;
-  }
+}
 
-.column > img {
+.column>img {
     width: 100%;
-  }
+}
 
-.columns {
-    margin-left:7em;
+.beer {
+    margin-left: 7em;
 }
 
 .img__wrap {
     position: relative;
     height: auto;
     width: 257px;
-  }
-  
+}
+
 .img__description_layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background:rgba(0,0,128, 0.6);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-  transition: opacity .2s, visibility .2s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 128, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    transition: opacity .2s, visibility .2s;
 }
 
 .img__wrap:hover .img__description_layer {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .img__description {
-  transition: .2s;
-  transform: translateY(1em);
+    transition: .2s;
+    transform: translateY(1em);
 }
 
 .img__wrap:hover .img__description {
-  transform: translateY(0);
+    transform: translateY(0);
 }
