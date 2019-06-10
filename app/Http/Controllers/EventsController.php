@@ -19,8 +19,9 @@ class EventsController extends Controller
     public function store() {
     
         $event = new Event();
-        $event->eventLocation = request('location');
         $event->eventTitle = request('title');
+        $event->eventImage = request('image');
+        $event->eventLocation = request('location');
         $event->eventDescription = request('description');
         $event->eventDate = request('date');
         $event->eventTime = request('time');
@@ -34,8 +35,9 @@ class EventsController extends Controller
     }
     
     public function update(Event $event) {
-      $event->eventLocation = request('location');
       $event->eventTitle = request('title');
+      $event->eventImage = request('image');
+      $event->eventLocation = request('location');
       $event->eventDescription = request('description');
       $event->eventDate = request('date');
       $event->eventTime = request('time');

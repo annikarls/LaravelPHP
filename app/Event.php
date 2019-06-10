@@ -9,6 +9,4 @@ class Event extends Model
 
     protected $primaryKey = 'eventId';
 
-    $primaryKey = 'eventId';
-
 }

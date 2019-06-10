@@ -13,6 +13,13 @@
     </div>
     
     <div class="field">
+        <label class="label">Bild</label>
+        <div class="control">
+            <input type="text" name="image" placeholder="Bild" value="{{$event->eventImage}}">
+        </div>
+    </div>
+    
+    <div class="field">
         <label class="label">Plats</label>
         <div class="control">
             <input type="text" name="location" placeholder="Plats" value="{{$event->eventLocation}}">
