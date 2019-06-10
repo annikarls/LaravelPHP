@@ -1,20 +1,39 @@
+/* 0 padding på kolumner */
+.column {
+    padding: 0;
+}
+
 /*Yasmine header*/
 .menu {
-    background-color: lightgrey;
+    background-color: #0d4e4a;
     height: 100vh;
     padding-top: 10%;
 }
 
+.menu-list a {
+    color: white;
+}
+
 /*Yasmine Logga in */
 .loginForm {
-    background-color: pink;
-    padding: 50px;
+    background-color: #0d4e4a;
+    padding: 8%;
+}
+
+form .input {
+    margin: 1%;
+    width: 80%;
+}
+
+.loginText {
+    padding: 8%;
+    background-color: #F8D205;
 }
 
 /* Annika
     öl-sidan */
 .beerColumn {
-    (ÄNDRA NAMN) max-width: 30%;
+    max-width: 30%;
 }
 
 .beerColumn>img {
