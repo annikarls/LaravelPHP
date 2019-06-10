@@ -21,8 +21,6 @@ class CreateUsersTable extends Migration
             $table->string('userPassword');
             $table->string('userRole');
             $table->rememberToken();
-            $table->integer('beerId');
-            $table->integer('eventId');
             $table->timestamps();
         });
     }

@@ -19,6 +19,13 @@
       </div>
       
       <div class="field">
+          <label class="label">Bild</label>
+          <div class="control">
+              <input type="text" name="image" placeholder="Bild">
+          </div>
+      </div>
+      
+      <div class="field">
           <label class="label">Beskrivning</label>
           <div class="control">
               <textarea class="textarea" name="description"></textarea>

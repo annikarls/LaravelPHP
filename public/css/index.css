@@ -69,8 +69,8 @@ form .input {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 128, 0.6);
-    color: #fff;
+    background: rgba(248, 210, 5, 0.6);
+    color: black;
     visibility: hidden;
     opacity: 0;
     display: flex;
