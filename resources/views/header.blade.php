@@ -11,15 +11,17 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <h1 class="title">Header</h1>
-    <div class="content">
-        <ul>
-            <li><a href="/">Hem</a></li>
-            <li><a href="/beers">Öl</a></li>
-            <li><a href="/events">Event</a></li>
-            <li><a href="/contact">Kontakt</a></li>
-            <li><a href="/login">(Logga in)</a></li>
-            <li><a href="/register">(Registrera användare)</a></li>
+  <div class="columns">
+    <div class="column is-2">
+      <aside class="menu">
+        <ul class="menu-list">
+          <li><a href="/">Hem</a></li>
+          <li><a href="/beers">Öl</a></li>
+          <li><a href="/events">Event</a></li>
+          <li><a href="/contact">Kontakt</a></li>
+          <li><a href="/login">(Logga in)</a></li>
+          <li><a href="/register">(Registrera användare)</a></li>
         </ul>
+      </aside>
     </div>
     @yield('content')
