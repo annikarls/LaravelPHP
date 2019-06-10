@@ -1,6 +1,7 @@
 @extends('header')
 @section('title', 'Öl')
 @section('content')
+<div class="column editBeer is-10">
     <h1 class="title">Lägg till en ny öl</h1>
     <form action="/beers" method="POST">
         {{ csrf_field() }}
@@ -52,7 +53,7 @@
                 <input type="text" name="type" placeholder="Typ">
             </div>
         </div>
-        
+
         <div class="field">
             <label class="label">Bryggeri</label>
             <div class="control">
@@ -72,8 +73,8 @@
                 <button class="button" type="submit">Lägg till</button>
             </div>
         </div>
-
     </form>
+    </div>
 @endsection
 </body>
 </html>

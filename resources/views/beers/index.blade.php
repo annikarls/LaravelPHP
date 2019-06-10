@@ -1,7 +1,12 @@
 @extends('header')
 @section('title', 'Öl')
 @section('content')
-    <div class="beer columns is-multiline">
+
+<div class="field">
+    <div class="control">
+        <a class="button is-link" href="/beers/create">Lägg till ny öl</a>
+    </div>
+</div>
         @foreach ($beers as $beer)
         <div class="column beerColumn is-one-third">
             <div class="field">
@@ -26,13 +31,9 @@
                     </div>
             </div>
         </div>
-        @endforeach   
+        @endforeach
     </div>
-    <div class="field">
-        <div class="control">
-            <a class="button" href="/beers/create">Lägg till ny öl</a>
-        </div>
-    </div>
+
 @endsection
 </body>
 </html>
