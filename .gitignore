@@ -16,3 +16,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 package-lock.json
+Beer.php
+Event.php
+Rate.php
+User.php
