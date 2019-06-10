@@ -1,9 +1,11 @@
 @extends('header')
 @section('title', 'Event')
 @section('content')
-    <h1 class="title">EVENT</h1>
-    <ul>
+<div class="column event is-10">
+  <h1 class="title">Event</h1>
+  <a class="button is-link" href="/events/create">Lägg till nytt event</a>
         @foreach ($events as $event)
+
             <p>{{ $event->eventTitle }}</p>
             <p>{{ $event->eventDescription }}</p>
             <p>{{ $event->eventLocation }}</p>
@@ -12,6 +14,11 @@
             <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>    
     </ul>
       
+
+        <div class="column eventColumn is-5">
+            <h1 class="title">{{ $event->eventTitle }}</p>
+            <a class="button is-success" href="/events/{{ $event->eventId }}/edit">Redigera</a>
+
     <form action="/events/{{ $event->eventId }}" method="POST">
         @method('DELETE')
         @csrf
@@ -20,15 +27,13 @@
                 <button class="button is-danger" type="submit">Ta bort</button>
             </div>
         </div>
-    </form>  
         <div class="img__wrap">
-          <img class="img__img" src="{{ $event->eventImage }}">          
+          <img class="img__img" src="{{ $event->eventImage }}">
         </div>
-
+    </form>
+    </div>
     @endforeach
-    
-    <a class="button" href="/events/create">Lägg till nytt event</a>
-    
+    </div>
 @endsection
 </body>
 </html>

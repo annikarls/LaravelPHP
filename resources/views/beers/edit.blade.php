@@ -1,6 +1,7 @@
 @extends('header')
 @section('title', 'Öl')
 @section('content')
+<div class="column editBeer is-10">
     <h1 class="title">Redigera/ta bort en öl</h1>
     <form method="POST" action="/beers/{{ $beer->beerId }}">
         {{ method_field('PATCH') }}
@@ -53,7 +54,7 @@
                 <input type="text" name="type" placeholder="Typ" value="{{ $beer->beerType }}">
             </div>
         </div>
-        
+
         <div class="field">
             <label class="label">Bryggeri</label>
             <div class="control">
@@ -74,6 +75,7 @@
             </div>
         </div>
     </form>
+  </div>
 @endsection
 </body>
 </html>
