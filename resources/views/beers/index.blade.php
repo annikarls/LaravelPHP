@@ -19,7 +19,12 @@
                     </div>
                 </div>
             </form>
-            <img src="{{ $beer->beerImage }}" style="max-width:60%">
+            <div class="img__wrap">
+            <img class="img__img" src="{{ $beer->beerImage }}">
+            <div class="img__description_layer">
+                    <p class="img__description">{{ $beer->beerDescription }}</p>
+            </div>
+        </div>
         </div>
         @endforeach
         
