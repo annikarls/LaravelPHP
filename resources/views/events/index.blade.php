@@ -5,6 +5,10 @@
     <ul>
         @foreach ($events as $event)
             <p>{{ $event->eventTitle }}</p>
+            <p>{{ $event->eventDescription }}</p>
+            <p>{{ $event->eventLocation }}</p>
+            <p>{{ $event->eventDate }}</p>
+            <p>{{ $event->eventTime }}</p>
             <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>    
     </ul>
       
