@@ -1,7 +1,7 @@
 @extends('header')
 @section('title', 'Öl')
 @section('content')
-    <h1 class="title">Redigera/ta bort en öl</h1>
+    <h1 class="title">Redigera</h1>
     <form method="POST" action="/beers/{{ $beer->beerId }}">
         {{ method_field('PATCH') }}
         {{ csrf_field() }}
