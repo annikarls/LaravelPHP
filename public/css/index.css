@@ -1,7 +1,9 @@
 /*Yasmine header*/
 .menu {
-    background-color: pink;
-    padding: 10px;
+    background-color: lightgrey;
+    position: fixed;
+    height: 100vh;
+    padding-top: 10%;
 }
 
 /* Annika

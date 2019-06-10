@@ -11,8 +11,8 @@
     <title>@yield('title')</title>
 </head>
 <body>
-  <div class="columns">
-    <div class="column is-2">
+  <div class="columns header">
+    <div class="column is-1">
       <aside class="menu">
         <ul class="menu-list">
           <li><a href="/">Hem</a></li>
