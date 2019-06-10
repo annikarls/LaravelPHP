@@ -21,4 +21,7 @@ class PagesController extends Controller
     public function event() {
         return view('event');
     }
+    public function register() {
+        return view('register');
+    }
 }

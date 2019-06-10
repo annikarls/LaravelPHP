@@ -17,6 +17,7 @@
             <li><a href="/events">Event</a></li>
             <li><a href="/contact">Kontakt</a></li>
             <li><a href="/login">(Logga in)</a></li>
+            <li><a href="/register">(Registrera användare)</a></li>
         </ul>
     </div>
     @yield('content')
