@@ -28,5 +28,26 @@ class EventsController extends Controller
     
         return redirect('/events');
     }
+    
+    public function edit(Event $event) {
+        return view('events.edit', compact('event'));
+    }
+    
+    public function update(Event $event) {
+      $event->eventLocation = request('location');
+      $event->eventTitle = request('title');
+      $event->eventDescription = request('description');
+      $event->eventDate = request('date');
+      $event->eventTime = request('time');
+      $event->save();
+
+        return redirect('/events');
+    }
+    
+    public function destroy(Event $event) {
+        $event->delete();
+
+        return redirect('/events');
+    }
 
 }

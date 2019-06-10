@@ -4,11 +4,22 @@
     <h1 class="title">EVENT</h1>
     <ul>
         @foreach ($events as $event)
-            <li>{{ $event->eventTitle }}</li>
-        @endforeach
+            <p>{{ $event->eventTitle }}</p>
+            <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>
+      
     </ul>  
+    <form action="/events/{{ $event->eventId }}" method="POST">
+        @method('DELETE')
+        @csrf
+        <div class="field">
+            <div class="control">
+                <button class="button is-danger" type="submit">Ta bort</button>
+            </div>
+        </div>
+    </form>
+    @endforeach
     
-    <p><a href="/events/create">Lägg till ett nytt event</a></p>
+    <a class="button" href="/events/create">Lägg till nytt event</a>
     
 @endsection
 </body>
