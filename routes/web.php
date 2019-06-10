@@ -16,10 +16,10 @@ Route::get('/login', 'PagesController@login');
 Route::get('/events', 'PagesController@index');
 Route::get('/beers', 'PagesController@index');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/register', 'PagesController@register');
 
 Route::resource('beers', 'BeersController');
 Route::resource('events', 'EventsController');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/store', "UserController@store");
+Route::post('/logs', "UserController@logs");
