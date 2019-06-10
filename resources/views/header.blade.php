@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="columns header">
-    <div class="column is-1">
+    <div class="column is-2">
       <aside class="menu">
         <ul class="menu-list">
           <li><a href="/">Hem</a></li>

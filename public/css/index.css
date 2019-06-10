@@ -1,18 +1,23 @@
 /*Yasmine header*/
 .menu {
     background-color: lightgrey;
-    position: fixed;
     height: 100vh;
     padding-top: 10%;
 }
 
-/* Annika
-    öl-sidan */
-.column {
-    max-width: 30%;
+/*Yasmine Logga in */
+.loginForm {
+    background-color: pink;
+    padding: 50px;
 }
 
-.column>img {
+/* Annika
+    öl-sidan */
+.beerColumn {
+    (ÄNDRA NAMN) max-width: 30%;
+}
+
+.beerColumn>img {
     width: 100%;
 }
 

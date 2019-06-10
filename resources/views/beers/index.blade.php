@@ -3,7 +3,7 @@
 @section('content')
     <div class="beer columns is-multiline">
         @foreach ($beers as $beer)
-        <div class="column is-one-third">
+        <div class="column beerColumn is-one-third">
             <div class="field">
                 <div class="control">
                     <p class="is-size-4">{{ $beer->beerName }}</p>
