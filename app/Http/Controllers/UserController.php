@@ -27,7 +27,8 @@ class UserController extends Controller
       if (count($data)){
         return redirect('/beers');
       } else {
-        echo "<script type='text/javascript'>alert('fel uppgifter, försök igen')</script>";
+        echo "<script type='text/javascript'>alert('fel uppgifter')</script>";
+        echo "<a href='/login'>Försök igen</a>";
       }
     }
 }
