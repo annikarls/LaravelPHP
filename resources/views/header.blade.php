@@ -12,7 +12,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-  <div class="columns header">
+  <div class="columns is-multiline header">
     <div class="column is-2">
       <aside class="menu">
         <ul class="menu-list">

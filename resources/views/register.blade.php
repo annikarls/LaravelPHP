@@ -10,7 +10,7 @@
   <br>
   <input class="input" type="email" name="userEmail" placeholder="E-post" value="">
   <br>
-  <input class="input" type="text" name="userRole" placeholder="Uppgift" value="">
+  <input class="input" type="text" name="userRole" placeholder="Roll" value="">
   <br>
   <input type="hidden" name="_token" value="{{csrf_token()}}">
   <br>
