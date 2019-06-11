@@ -12,6 +12,20 @@ body {
     font-weight: 100;
 }
 
+.logo {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 260%;
+    padding-top: 20%;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+.logo a {
+    color: white;
+}
+
 /*Yasmine header*/
 .menu {
     background-color: #0d4e4a;
@@ -25,16 +39,16 @@ body {
 }
 
 .menu-list {
-    padding-top: 70%;
+    padding-top: 120%;
 }
 
 /*Yasmine Logga in */
 .loginForm {
-    background-color: #0d4e4a;
+    background-color: #F8D205;
     padding: 8%;
 }
 
-.loginForm .title {
+.loginText .title, .loginText p {
     color: white;
 }
 
@@ -44,7 +58,7 @@ form .input, .textarea {
 
 .loginText {
     padding: 8%;
-    background-color: #F8D205;
+    background-color: # 0d4e4a;
 }
 
 /*Yasmine registrera */
