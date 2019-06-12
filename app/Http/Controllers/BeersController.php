@@ -12,12 +12,12 @@ class BeersController extends Controller
     }
 
     public function create() {
-        
+
         return view('beers.create');
     }
 
     public function store() {
-        
+
         $beer = new Beer();
         $beer->beerName = request('name');
         $beer->beerImage = request('image');

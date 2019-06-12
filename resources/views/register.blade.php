@@ -17,6 +17,7 @@
   <button class="button is-link" type="submit" name="button">Registrera</button>
 </form>
 </div>
+</div>
 @endsection
 </body>
 </html>
