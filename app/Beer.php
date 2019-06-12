@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Beer extends Model
 {
-     protected $primaryKey = 'beerId';
+     /**
+     * Get the user that owns the beer.
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

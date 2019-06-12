@@ -27,7 +27,7 @@ class BeersController extends Controller
         $beer->beerAbv = request('abv');
         $beer->beerType = request('type');
         $beer->beerBrewery = request('brewery');
-        $beer->beerUserId = request('userid');
+        $beer->user_id = request('userid');
         $beer->save();
 
         return redirect('/beers');
@@ -46,7 +46,7 @@ class BeersController extends Controller
         $beer->beerAbv = request('abv');
         $beer->beerType = request('type');
         $beer->beerBrewery = request('brewery');
-        $beer->beerUserId = request('userid');
+        $beer->user_id = request('userid');
         $beer->save();
 
         return redirect('/beers');

@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-  protected $primaryKey = 'userId';
+        /**
+     * Get the beers for the user.
+     */
+    public function beers()
+    {
+        return $this->hasMany(Beer::class);
+    }
 }

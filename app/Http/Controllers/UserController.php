@@ -14,7 +14,7 @@ class UserController extends Controller
     $userEmail=$request->input('userEmail');
     $userRole=$request->input('userRole');
 
-    echo DB::insert('insert into users(userId,userName,userPassword,userEmail,userRole) VALUES(?,?,?,?,?)', [null,$userName,$userPassword,$userEmail,$userRole]);
+    echo DB::insert('insert into users(id,userName,userPassword,userEmail,userRole) VALUES(?,?,?,?,?)', [null,$userName,$userPassword,$userEmail,$userRole]);
     return redirect('/login');
   }
 
@@ -22,7 +22,7 @@ class UserController extends Controller
       $userName=$request->input('userName');
       $userPassword=$request->input('userPassword');
 
-      $data = DB::select('select userId from users where userName=? and userPassword=?', [$userName, $userPassword]);
+      $data = DB::select('select id from users where userName=? and userPassword=?', [$userName, $userPassword]);
 
       if (count($data)){
         return redirect('/beers');
