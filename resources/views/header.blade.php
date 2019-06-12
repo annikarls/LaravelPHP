@@ -14,6 +14,7 @@
 <body>
   <div class="columns is-multiline header">
     <div class="column is-2">
+      <h1 class="title logo"><a href="/">ö.l</a></h1>
       <aside class="menu">
         <ul class="menu-list">
           <li><a href="/">Hem</a></li>

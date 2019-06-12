@@ -16,7 +16,7 @@
             <p>{{ $event->eventLocation }}</p>
             <p>{{ $event->eventDate }}</p>
             <p>{{ $event->eventTime }}</p>
-            <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>  
+            <a class="button is-success is-outlined" href="/events/{{ $event->eventId }}/edit">Redigera</a>
             <!-- <a class="button is-success" href="/events/{{ $event->eventId }}/edit">Redigera</a> -->
 
     <form action="/events/{{ $event->eventId }}" method="POST">
@@ -30,6 +30,7 @@
     </form>
     </div>
     @endforeach
+    </div>
     </div>
 @endsection
 </body>
