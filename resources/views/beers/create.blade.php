@@ -61,12 +61,12 @@
             </div>
         </div>
 
-        <div class="field">
+        {{-- <div class="field">
             <label class="label">Användar-id (finns just nu bara för test)</label>
             <div class="control">
                 <input type="number" name="userid" placeholder="Användar-id">
             </div>
-        </div>
+        </div> --}}
 
         <div class="field">
             <div class="control">

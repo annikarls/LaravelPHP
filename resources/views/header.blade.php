@@ -21,8 +21,36 @@
           <li><a href="/beers">Öl</a></li>
           <li><a href="/events">Event</a></li>
           <li><a href="/contact">Kontakt</a></li>
-          <li><a href="/login">(Logga in)</a></li>
-          <li><a href="/register">(Registrera användare)</a></li>
+          @guest
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('login') }}">{{ __('Logga in') }}</a>
+          </li>
+          @if (Route::has('register'))
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('register') }}">{{ __('Registrera användare') }}</a>
+              </li>
+          @endif
+      @else
+      <div class="navbar-item has-dropdown is-hoverable">
+          <li class="navbar-link">
+              <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+
+              <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="{{ route('logout') }}"
+                     onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                      {{ __('Logga ut') }}
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+              </div>
+          
+          </div>
+      @endguest
         </ul>
       </aside>
     </div>
