@@ -2,8 +2,8 @@
 @section('title', 'Öl')
 @section('content')
 <div class="column editBeer is-10">
-    <h1 class="title">Redigera/ta bort en öl</h1>
-    <form method="POST" action="/beers/{{ $beer->beerId }}">
+    <h1 class="title">Redigera</h1>
+    <form action="/beers/{{ $beer->id }}" method="POST" >
         {{ method_field('PATCH') }}
         {{ csrf_field() }}
         <div class="field">
@@ -62,12 +62,12 @@
             </div>
         </div>
 
-        <div class="field">
+        {{-- <div class="field">
             <label class="label">Användar-id (finns just nu bara för test)</label>
             <div class="control">
                 <input type="number" name="userid" placeholder="Användar-id" value="{{ $beer->beerUserId }}">
             </div>
-        </div>
+        </div> --}}
 
         <div class="field">
             <div class="control">

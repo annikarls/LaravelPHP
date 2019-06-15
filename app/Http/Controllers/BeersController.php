@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Beer;
+use Illuminate\Support\Facades\Auth;
 
 class BeersController extends Controller
 {
@@ -18,6 +19,7 @@ class BeersController extends Controller
 
     public function store() {
 
+        $userId= Auth::id();
         $beer = new Beer();
         $beer->beerName = request('name');
         $beer->beerImage = request('image');
@@ -27,7 +29,7 @@ class BeersController extends Controller
         $beer->beerAbv = request('abv');
         $beer->beerType = request('type');
         $beer->beerBrewery = request('brewery');
-        $beer->user_id = request('userid');
+        $beer->user_id = $userId;
         $beer->save();
 
         return redirect('/beers');
@@ -38,6 +40,7 @@ class BeersController extends Controller
     }
 
     public function update(Beer $beer) {
+        $userId= Auth::id();
         $beer->beerName = request('name');
         $beer->beerImage = request('image');
         //$beer->beerRate = request('rate');
@@ -46,7 +49,7 @@ class BeersController extends Controller
         $beer->beerAbv = request('abv');
         $beer->beerType = request('type');
         $beer->beerBrewery = request('brewery');
-        $beer->user_id = request('userid');
+        $beer->user_id = $userId;
         $beer->save();
 
         return redirect('/beers');

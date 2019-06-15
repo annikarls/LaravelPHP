@@ -4,7 +4,9 @@
 
 <div class="field">
     <div class="control">
+            @if (Auth::user())
         <a class="button is-link" href="/beers/create">Lägg till ny öl</a>
+        @endif
     </div>
 </div>
         @foreach ($beers as $beer)
@@ -14,13 +16,15 @@
                     <p class="is-size-4">{{ $beer->beerName }}</p>
                 </div>
             </div>
-            <form action="/beers/{{ $beer->beerId }}" method="POST">
+            <form action="/beers/{{ $beer->id }}" method="POST">
                 @method('DELETE')
                 @csrf
                 <div class="field">
                     <div class="control">
-                        <a class="button is-success is-outlined is-small" href="/beers/{{ $beer->beerId }}/edit">Redigera</a>
+                            @if (Auth::user())
+                        <a class="button is-success is-outlined is-small" href="/beers/{{ $beer->id }}/edit">Redigera</a>
                         <button class="button is-danger is-small" type="submit">Ta bort</button>
+                        @endif
                     </div>
                 </div>
             </form>
@@ -33,7 +37,6 @@
         </div>
         @endforeach
     </div>
-</div>
 @endsection
 </body>
 </html>
