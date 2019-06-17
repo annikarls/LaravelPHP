@@ -29,7 +29,6 @@ body {
 /*Yasmine header*/
 .menu {
     background-color: #0d4e4a;
-    height: 100vh;
     padding: 10%;
     border-right: 1px solid white;
 }
@@ -111,9 +110,8 @@ form .input, .textarea {
 .welcomeTitle {
     text-transform: uppercase;
     font-family: monospace;
-    font-size: 260%;
+    font-size: 1.8rem;
     text-align: center;
-    color: white;
 }
 
 .welcomeText {
@@ -122,14 +120,12 @@ form .input, .textarea {
 
 .welcomeText p {
     font-family: courier;
-    font-size: 1.2rem;
     padding: 0px 25px 25px 25px;
 }
 
 .welcome {
     background-color: #F8D205;
     padding-top: 10%;
-    color: white;
 }
 
 .welcome2 {
@@ -211,28 +207,30 @@ footer a:hover {
     color: #F8D205;
 }
 
+/* yasmine öl-sidan*/
+.beertitle {
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 /* Annika
     öl-sidan */
 .beerColumn {
-    max-width: 30%;
-}
-
-.beerColumn>img {
-    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
 }
 
 .beerColumn img {
-    /* height: 50%; */
-}
-
-.beer {
-    margin-left: 7em;
+    height: 100%;
+    object-fit: cover;
 }
 
 .img__wrap {
     position: relative;
     height: auto;
-    width: 257px;
 }
 
 .img__description_layer {
@@ -241,7 +239,7 @@ footer a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(248, 210, 5, 0.6);
+    background: rgba(248, 210, 5, 0.8);
     color: black;
     visibility: hidden;
     opacity: 0;

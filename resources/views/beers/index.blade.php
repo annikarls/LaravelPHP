@@ -10,7 +10,7 @@
     </div>
 </div>
         @foreach ($beers as $beer)
-        <div class="column beerColumn is-one-third">
+        <div class="column beerColumn is-3">
             <div class="field">
                 <div class="control">
                     <p class="is-size-4">{{ $beer->beerName }}</p>
@@ -31,7 +31,7 @@
             <div class="img__wrap">
                 <img class="img__img" src="{{ $beer->beerImage }}">
                     <div class="img__description_layer">
-                        <p class="img__description">{{ $beer->beerDescription }}</p>
+                        <div class="img__description"> <h1 class="beertitle">{{ $beer->beerName }}</h1> <br>{{ $beer->beerDescription }}</div>
                     </div>
             </div>
         </div>

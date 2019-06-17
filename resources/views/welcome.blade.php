@@ -7,7 +7,7 @@ swal("Är du 18 år eller äldre?", "För att läsa den här sidans innehåll b�
   <div class="column welcome">
     <div class="welcomeText">
       <h1 class="title welcomeTitle">Välkommen!</h1>
-      <p>På den här sidan hittar du noga utvalda öl-sorter. Lokala, för alla och UTSÖKTA.</p>
+      <p>På den här sidan hittar du noga utvalda öl-sorter. Lokala, för nästan alla och UTSÖKTA.</p>
     </div>
     <?php $beer = DB::table('beers')->where('beerType', 'porter')->first(); ?>
       <div class="img__wrapw">
