@@ -16,7 +16,11 @@
         <tr>
             <td>{{ $beer->beerName }}</td>
             <td><a class="button is-small" href="/beers/{{ $beer->id }}/edit">Redigera</a></td>
+                <form action="/beers/{{ $beer->id }}" method="POST">
             <td><button class="button is-danger is-small" type="submit">Ta bort</button></td>
+                @method('DELETE')
+                @csrf
+            </form>
         </tr>
         @endforeach
     </table>
