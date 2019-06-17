@@ -111,7 +111,7 @@ form .input, .textarea {
 }
 
 .eventColumn img {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .eventDate {
@@ -130,9 +130,22 @@ form .input, .textarea {
     padding: 8%;
 }
 
+.eventUp {
+    text-align: left;
+    padding: 25% 10% 0 10%;
+    border-bottom: 1px solid white;
+    margin-bottom: 5%;
+    background-color: #F8D205;
+}
+
 .editBeer {
     background-color: #F8D205;
     padding: 8%;
+}
+
+.ourevents {
+    font-family: monospace;
+    font-size: 2.4rem;
 }
 
 .beertitle {

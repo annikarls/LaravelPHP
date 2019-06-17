@@ -4,9 +4,9 @@
 
 <!-- <div class="column event is-10">
   <h1 class="title">Event</h1> -->
-<div class="column beerUp is-10">
-  <h1 class="title ourBeer">Våra öl</h1>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+<div class="column eventup is-10">
+  <h1 class="title ourevents">Våra event</h1>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 </div>
   <div class="field">
       <div class="control">
