@@ -14,10 +14,12 @@
 <body>
   <div class="columns is-multiline header">
     <div class="column is-2">
-      <h1 class="title logo"><a href="/">ö.l</a></h1>
-      <i class="fas fa-anchor"></i>
+      <h1 class="title logo"><a href="/">ö.l</a>
+        <br><br>
+      <i class="fas fa-anchor is-size-1 has-text-white"></i></h1>
+      
       <aside class="menu">
-          <i class="fas fa-anchor is-size-1 has-text-white "></i>
+          <!-- <i class="fas fa-anchor is-size-1 has-text-white"></i> -->
         <ul class="menu-list">
           <li><a href="/">Hem</a></li>
           <li><a href="/beers">Öl</a></li>
