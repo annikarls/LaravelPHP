@@ -4,22 +4,22 @@
 
 <!-- <div class="column event is-10">
   <h1 class="title">Event</h1> -->
-  
+<h1 class="title welcomeTitle">Events!</h1>
   <div class="field">
       <div class="control">
               @if (Auth::user())
           <a class="button is-link" href="/events/create">Lägg till nytt event</a>
           @endif
       </div>
-  </div>  
+  </div>
         @foreach ($events as $event)
-        <div class="column eventColumn is-one-third">
+        <div class="column eventColumn is-8">
           <div class="field">
               <div class="control">
                   <p class="is-size-4">{{ $event->eventTitle }}</p>
               </div>
           </div>
-            <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->      
+            <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->
             <!-- <div class="img__wrap">
               <img class="img__img" src="{{ $event->eventImage }}">
             </div> -->
@@ -43,7 +43,7 @@
             </div>
         </div>
     </form>
-    <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->      
+    <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->
       <div class="img__wrap">
         <img class="img__img" src="{{ $event->eventImage }}">
       </div>
