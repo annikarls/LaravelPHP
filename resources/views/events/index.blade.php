@@ -4,7 +4,10 @@
 
 <!-- <div class="column event is-10">
   <h1 class="title">Event</h1> -->
-<h1 class="title welcomeTitle">Events!</h1>
+<div class="column beerUp is-10">
+  <h1 class="title ourBeer">Våra öl</h1>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+</div>
   <div class="field">
       <div class="control">
               @if (Auth::user())
@@ -13,12 +16,7 @@
       </div>
   </div>
         @foreach ($events as $event)
-        <div class="column eventColumn is-8">
-          <div class="field">
-              <div class="control">
-                  <p class="is-size-4">{{ $event->eventTitle }}</p>
-              </div>
-          </div>
+        <div class="column eventColumn is-6">
             <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->
             <!-- <div class="img__wrap">
               <img class="img__img" src="{{ $event->eventImage }}">
@@ -43,16 +41,16 @@
             </div>
         </div>
     </form>
-    <!-- <h1 class="title">{{ $event->eventTitle }}</h1> -->
       <div class="img__wrap">
         <img class="img__img" src="{{ $event->eventImage }}">
       </div>
-      <p>{{ $event->eventTitle }}</p>
-      <p>{{ $event->eventDescription }}</p>
-      <p>{{ $event->eventLocation }}</p>
-      <p>{{ $event->eventDate }}</p>
-      <p>{{ $event->eventTime }}</p>
     </div>
+    <div class="column eventColumn is-6">
+      <h1 class="title eventTitle">{{ $event->eventTitle }}</h1>
+    <p><i class="eventDate">Var? </i>{{ $event->eventLocation }}</p>
+    <p><i class="eventDate">När? </i> {{ $event->eventDate }}, {{ $event->eventTime }}</p>
+    <p>{{ $event->eventDescription }}</p>
+  </div>
     @endforeach
     </div>
   </div>
