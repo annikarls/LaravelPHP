@@ -33,7 +33,7 @@
       @else
       <div class="navbar-item has-dropdown is-hoverable">
           <li class="navbar-link">
-              <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+              <a href="/users" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                   {{ Auth::user()->name }} <span class="caret"></span>
               </a>
 
