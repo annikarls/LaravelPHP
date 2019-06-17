@@ -42,6 +42,14 @@ body {
     padding-top: 120%;
 }
 
+.navbar-dropdown {
+    background-color: gray;
+}
+
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
+    background-color: gray;
+}
+
 /*Yasmine Logga in */
 .loginForm {
     background-color: #F8D205;
