@@ -216,11 +216,25 @@ footer a:hover {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.ourBeer {
+    font-family: serif;
+    font-size: 2.8rem;
+}
+
+.beerUp {
+    font-family: monospace;
+    text-align: left;
+    padding: 25% 10% 0 10%;
+    border-bottom: 1px solid white;
+    margin-bottom: 5%;
+    background-color: #F8D205;
+}
+
 /* Annika
     öl-sidan */
 .beerColumn {
-    margin-bottom: 30px;
     display: flex;
+    margin-left: 0;
 }
 
 .beerColumn img {

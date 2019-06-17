@@ -2,6 +2,10 @@
 @section('title', 'Öl')
 @section('content')
 
+<div class="column beerUp is-10">
+  <h1 class="title ourBeer">Våra öl</h1>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+</div>
 <div class="field">
     <div class="control">
             @if (Auth::user())
@@ -11,11 +15,6 @@
 </div>
         @foreach ($beers as $beer)
         <div class="column beerColumn is-3">
-            <div class="field">
-                <div class="control">
-                    <p class="is-size-4">{{ $beer->beerName }}</p>
-                </div>
-            </div>
             <form action="/beers/{{ $beer->id }}" method="POST">
                 @method('DELETE')
                 @csrf
