@@ -6,7 +6,7 @@
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
       </div>
       <div class="column is-6 has-text-centered contactForm">
-        <form class="contactUsForm" action="VAR SKA DET SKICKAS" method="post">
+        <form class="contactUsForm" action="mailto:exempelemail@email.com" method="post">
           <h1 class="title">Kontakta oss</h1>
           <input class="input" type="text" name="sendersName" placeholder="Namn">
           <input class="input" type="email" name="sendersEmail" placeholder="E-post">

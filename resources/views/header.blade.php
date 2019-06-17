@@ -48,10 +48,11 @@
                       @csrf
                   </form>
               </div>
-          
+
           </div>
       @endguest
         </ul>
       </aside>
     </div>
     @yield('content')
+    @extends('footer')
