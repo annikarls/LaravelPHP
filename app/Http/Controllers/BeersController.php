@@ -32,7 +32,7 @@ class BeersController extends Controller
         $beer->user_id = $userId;
         $beer->save();
 
-        return redirect('/beers');
+        return redirect('/users');
     }
 
     public function edit(Beer $beer) {
