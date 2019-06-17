@@ -106,27 +106,81 @@ form .input, .textarea {
     padding: 8%;
 }
 
-.welcome {
-    background-color: #0d4e4a;
-    padding: 8%;
-    padding-top: 30%;
+/*Yasmine welcome*/
+.welcomeTitle {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 260%;
+    text-align: center;
+    text-decoration: underline;
     color: white;
-    border-left: 1px solid white;
+}
+
+.welcomeText {
+    padding-bottom: 50px;
+}
+
+.welcomeText p {
+    font-family: courier;
+    font-size: 1.2rem;
+    padding: 0px 25px 25px 25px;
+}
+
+.welcome {
+    background-color: #dfbd04;
+    padding-top: 10%;
+    color: white;
 }
 
 .welcome2 {
     background-color: #0d4e4a;
-    padding: 8%;
-    padding-top: 20%;
+    padding-top: 10%;
     color: white;
-    border-left: 1px solid white;
 }
 
 .welcome3 {
     background-color: #0d4e4a;
-    padding: 8%;
     color: white;
-    border-left: 1px solid white;
+}
+
+.img__wrapw {
+    position: relative;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.5em;
+}
+
+.img__description_layerw {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrapw:hover .img__description_layerw {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__descriptionw {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.img__wrapw:hover .img__descriptionw {
+    transform: translateY(0);
 }
 
 /* Annika
