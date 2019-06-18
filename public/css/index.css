@@ -140,6 +140,7 @@ form .input, .textarea {
     border-bottom: 1px solid white;
     margin-bottom: 5%;
     background-color: #F8D205;
+    font-family: monospace;
 }
 
 .editBeer {
@@ -167,6 +168,7 @@ form .input, .textarea {
 
 .beerUp {
     text-align: left;
+    font-family: monospace;
     padding: 25% 10% 0 10%;
     border-bottom: 1px solid white;
     margin-bottom: 5%;
