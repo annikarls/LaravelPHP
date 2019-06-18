@@ -15,9 +15,9 @@
   <div class="columns is-multiline header">
     <div class="column is-2">
       <h1 class="title logo"><a href="/">ö.l</a>
-        <br><br>
-      <i class="fas fa-anchor is-size-1 has-text-white"></i></h1>
-      
+
+      <p><i class="fas fa-anchor is-size-1 has-text-white"></i></p></h1>
+
       <aside class="menu">
           <!-- <i class="fas fa-anchor is-size-1 has-text-white"></i> -->
         <ul class="menu-list">
