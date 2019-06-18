@@ -9,7 +9,7 @@ swal("Är du 18 år eller äldre?", "För att läsa den här sidans innehåll b�
       <h1 class="title welcomeTitle">Välkommen!</h1>
       <p>På den här sidan hittar du noga utvalda öl-sorter. Lokala, för nästan alla och UTSÖKTA.</p>
     </div>
-    <?php $beer = DB::table('beers')->where('beerType', 'porter')->first(); ?>
+    <?php $beer = DB::table('beers')->where('beerType', 'suröl')->first(); ?>
       <div class="img__wrapw">
           <img class="img__imgw" src="{{ $beer->beerImage }}">
               <div class="img__description_layerw">
@@ -32,7 +32,7 @@ swal("Är du 18 år eller äldre?", "För att läsa den här sidans innehåll b�
           </div>
   </div>
   <div class="column welcome2">
-    <?php $beer = DB::table('beers')->where('beerType', 'suröl')->first(); ?>
+    <?php $beer = DB::table('beers')->where('beerType', 'porter')->first(); ?>
       <div class="img__wrapw">
           <img class="img__imgw" src="{{ $beer->beerImage }}">
               <div class="img__description_layerw">
